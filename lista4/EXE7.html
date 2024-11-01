@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 4 - Nicolas e Muryllo</title>
+</head>
+<body>
+    <script>
+      var NotaMb = 0;
+      var NotaI = 0; 
+      var i = 1;
+      
+do { 
+    var nome= prompt("Digite o nome do aluno " + i +" : ");
+    var nota= prompt("Digite a nota do aluno " + nome +" :");
+    if (nota == 'MB'){
+      NotaMb++
+    }
+    else if (nota == 'I'){
+      NotaI++
+    }
+i++;
+}   while(i<=10);
+
+document.write(NotaMb + " tiraram MB na menção." + "<br>");
+document.write(NotaI + " tiraram I na menção.");
+      </script>
+</body>
+</html>

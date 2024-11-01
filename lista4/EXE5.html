@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 4 - Nicolas e Muryllo</title>
+</head>
+<body>
+    <script>
+       var numero = 2;
+       while (numero <=100){
+        var primo = true;
+        var divisor = 2;
+        
+        while (divisor < numero){
+            if (numero % divisor === 0) {
+                primo = false;
+                break;
+            }
+            divisor++;
+        }
+        if (primo) {
+            document.write(numero + "<br>")
+        }
+        numero++;
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Simples</title>
+</head>
+<body><center>
+<button id="abrir">ABRIR QUIZ</button><br><br>
+
+    <dialog id="modal">
+        
+        <form>
+            <label for="telefone">Digite seu número de telefone:</label><br><br>
+            <input type="tel" name="telefone" id="telefone"><br><br>
+            <label for="numero">Quantos anos você tem:</label><br><br>
+            <input type="number" name="numero" id="idade"><br><br>
+            <label for="data">Digite a data do seu nascimento:</label><br><br>
+            <input type="datetime-local" name="data" id="data"><br><br>
+            <label for="cor">Qual sua cor favorita:</label><br><br>
+            <input type="color"><br><br>
+            <label for="bolinha">Prefere qual dessas opções</label><br><br>
+            <input type="radio" name="radio" id="radio">PW<br><br>
+            <input type="radio" name="radio" id="radio">TPA<br><br>
+            <input type="radio" name="radio" id="radio">APS<br><br>
+            <label for="checkbox">Já tomou água hoje?</label><br><br>
+            <input type="checkbox"><br><br>
+            <label for="pais">Quando seu pais nasceram:</label><br><br>
+            <input type="date" name="pais" id="pais"><br><br>
+           <label for="email">Digite seu gmail:</label><br><br>
+           <input type="email" name="email" id="email"><br><br>
+           <label for="texto">Digite uma mensagem para o dono do site:</label><br><br>
+           <input type="text" name="texto" id="texto"><br><br>
+           <label for="arquivo">Coloque o melhor arquivo que você tem:</label><br><br>
+           <input type="file" name="arquivo" id="arquivo"><br><br>
+           <label for="horario">Mande o horário que você está fazendo isso:</label><br><br>
+           <input type="time" name="horario" id="horario"><br><br>
+            <input type="reset" value="Limpar" style="color:red;background-color: black;">
+         <br><br><br><br><br>
+
+        </form>
+    
+    <br><br>
+        <button id="fechar">FECHAR QUIZ</button>
+        </dialog>
+        <br><br><br><br><br><br><br><br>
+        <a href="aaintro.html"><button id="voltar">IR PARA O SITE</button></a>
+<script>
+    document.getElementById('abrir').onclick = function() {
+    document.getElementById('modal').showModal();
+};
+document.getElementById('fechar').onclick = function() {
+    document.getElementById('modal').close();
+};
+</script>
+</body>
+</html></center>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+#abrir {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#fechar {
+    background-color: #f44336;
+    color: white;
+}
+
+dialog {
+    border: none;
+    padding: 20px;
+    background-color: white;
+}
+input {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+#voltar {
+    background-color: aquamarine;
+}
+</style>

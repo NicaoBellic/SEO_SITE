@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 4 - Nicolas e Muryllo</title>
+</head>
+<body>
+    <script>
+        //Calcular fatorial de um número
+        var n1, res;
+        n1=parseInt(prompt("Digite o número que deseja saber o fatorial:"));
+        function fatorial(n){
+            if (n===0||n===1){
+              return 1
+            }
+            return n*fatorial(n-1);
+        }
+        res= fatorial(n1)
+        document.write("O resultado é " +res);
+        </script>
+</body>
+</html>

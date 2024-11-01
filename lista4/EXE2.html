@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 4 - Nicolas e Muryllo</title>
+</head>
+<body>
+    <script>
+        // Receber medidas de cinco triângulos e calcular se podem ser triângulos e se são isósceles, equilátero ou escaleno.
+        var l1,l2,l3,l4,l5,l6,l7,l8,l9,l10,l11,l12,l13,l14,l15;
+        l1=parseInt(prompt("Digite o primeiro lado do primeiro triângulo:"));
+        l2=parseInt(prompt("Digite o segundo lado do primeiro triângulo:"));
+        l3=parseInt(prompt("Digite o terceiro lado do primeiro triângulo:"));
+        l4=parseInt(prompt("Digite o primeiro lado do segundo triângulo:"));
+        l5=parseInt(prompt("Digite o segundo lado do segundo triângulo:"));
+        l6=parseInt(prompt("Digite o terceiro lado do segundo triângulo:"));
+        l7=parseInt(prompt("Digite o primeiro lado do terceiro triângulo:"));
+        l8=parseInt(prompt("Digite o segundo lado do terceiro triângulo:"));
+        l9=parseInt(prompt("Digite o terceiro lado do terceiro triângulo:"));
+        l10=parseInt(prompt("Digite o primeiro lado do quarto triângulo:"));
+        l11=parseInt(prompt("Digite o segundo lado do quarto triângulo:"));
+        l12=parseInt(prompt("Digite o terceiro lado do quarto triângulo:"));
+        l13=parseInt(prompt("Digite o primeiro lado do quinto triângulo:"));
+        l14=parseInt(prompt("Digite o segundo lado do quinto triângulo:"));
+        l15=parseInt(prompt("Digite o terceiro lado do quinto triângulo:"));
+       if (l1>l2+l3||l2>l3+l1||l3>l1+l2){
+        document.write("O primeiro não pode ser um triângulo"+ "<br>")
+        }
+        else {
+        if (l1===l2&&l2===l3){
+            document.write("O primeiro é um triângulo equilátero"+"<br>");
+        }
+        else if (l1===l2||l1===l3||l2===l3){
+            document.write("O primeiro é um triângulo isósceles"+"<br>");
+        }
+        else {
+            document.write("O primeiro é um triângulo escaleno"+"<br>");
+        }
+    }
+    if (l4>l5+l6||l5>l4+l6||l6>l5+l4){
+        document.write("O segundo não pode ser um triângulo"+ "<br>")
+        }
+        else {
+        if (l4===l5&&l5===l6){
+            document.write("O segundo é um triângulo equilátero"+"<br>");
+        }
+        else if (l4===l5||l4===l6||l5===l6){
+            document.write("O segundo é um triângulo isósceles"+"<br>");
+        }
+        else {
+            document.write("O segundo é um triângulo escaleno"+"<br>");
+        }
+    }
+    if (l7>l8+l9||l8>l7+l9||l9>l8+l7){
+        document.write("O terceiro não pode ser um triângulo"+ "<br>")
+        }
+        else {
+        if (l7===l8&&l8===l9){
+            document.write("O terceiro é um triângulo equilátero"+"<br>");
+        }
+        else if (l7===l8||l7===l9||l8===l9){
+            document.write("O terceiro é um triângulo isósceles"+"<br>");
+        }
+        else {
+            document.write("O terceiro é um triângulo escaleno"+"<br>");
+        }
+    }
+    if (l10>l11+l12||l11>l10+l12||l12>l11+l10){
+        document.write("O quarto não pode ser um triângulo"+ "<br>")
+        }
+        else {
+        if (l10===l11&&l11===l12){
+            document.write("O quarto é um triângulo equilátero"+"<br>");
+        }
+        else if (l10===l11||l10===l12||l11===l12){
+            document.write("O quarto é um triângulo isósceles"+"<br>");
+        }
+        else {
+            document.write("O quarto é um triângulo escaleno"+"<br>");
+        }
+    }
+    if (l13>l14+l15||l14>l13+l15||l15>l14+l13){
+        document.write("O quinto não pode ser um triângulo"+ "<br>")
+        }
+        else {
+        if (l13===l14&&l14===l15){
+            document.write("O quinto é um triângulo equilátero"+"<br>");
+        }
+        else if (l13===l14||l13===l15||l14===l15){
+            document.write("O quinto é um triângulo isósceles"+"<br>");
+        }
+        else {
+            document.write("O quinto é um triângulo escaleno"+"<br>");
+        }
+    }
+        </script>
+</body>
+</html>
